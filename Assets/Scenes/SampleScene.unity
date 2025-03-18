@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.34509805, g: 0.34509805, b: 0.34509805, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c34a4426aa99c4648acd905b1c2d2714, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.27483675, g: 0.12489916, b: 0.05199076, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -751,6 +751,74 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 490351296}
   m_SourcePrefab: {fileID: 100100000, guid: 15dd935655b062540b541444cfacc892, type: 3}
+--- !u!1 &375641803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
+  m_PrefabInstance: {fileID: 1681988078}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &375641807
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375641803}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &375641808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375641803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8922ab96524dc6c4d918f2dc2f446be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 2124924993}
+  player: {fileID: 2124924997}
+  speed: 3
+--- !u!65 &375641809
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375641803}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.011004729, y: 0.0200935, z: 0.01225432}
+  m_Center: {x: 0.000010235002, y: -0.00005035987, z: -0.000021689804}
 --- !u!1001 &378321878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -997,7 +1065,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 155774cec1b9657498bc1c105dfdb6af, type: 2}
     - target: {fileID: 919132149155446097, guid: 3379f68d444322a44828657f8a1c8b55, type: 3}
       propertyPath: m_Name
-      value: soilder_scifi_0318043217_texture
+      value: soilder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4021,31 +4089,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31
+      value: -1.697799
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0097113
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.89905
+      value: -6.22426
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.036100507
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003774895
+      value: 0.0000000013627602
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.9993482
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.000000037724355
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4053,7 +4121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -184.138
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -4070,7 +4138,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 375641808}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 375641807}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 375641809}
   m_SourcePrefab: {fileID: 100100000, guid: cfb3e5e6a595ab2429486b79e1464b50, type: 3}
 --- !u!1 &1703734716 stripped
 GameObject:
@@ -4696,7 +4773,7 @@ MonoBehaviour:
   walkSpeed: 12
   jumpHeight: 3
   gravity: -9.81
-  mouseSensitivity: 200
+  mouseSensitivity: 300
 --- !u!54 &2124925001
 Rigidbody:
   m_ObjectHideFlags: 0
