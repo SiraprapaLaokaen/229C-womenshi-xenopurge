@@ -5,10 +5,6 @@ using UnityEngine;
 public class AlienScript : MonoBehaviour
 {
     public GameObject Target;
-   /* public Transform player;
-    public float speed = 3f;
-    private Rigidbody rb; */
-
     public Transform player;
     public float speed = 3f;
     public float detectionRange = 10f; 
@@ -25,11 +21,6 @@ public class AlienScript : MonoBehaviour
 
     }
  
-    /*void FixedUpdate()
-    {
-        Vector3 direction = (player.position - transform.position).normalized;
-        rb.MovePosition(transform.position + direction * speed * Time.fixedDeltaTime);
-    }*/
 
     void FixedUpdate()
     {
