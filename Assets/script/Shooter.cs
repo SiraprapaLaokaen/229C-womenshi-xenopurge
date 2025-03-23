@@ -29,16 +29,20 @@ public class Shooter : MonoBehaviour
  
                 Instantiate( vfxHitpoint , hit.point , Quaternion.identity );
 
-                if ( hit.collider.name == "enemy")
+                if ( hit.collider.name == "alien" || hit.collider.name == "alien1" || hit.collider.name == "alien2" || hit.collider.name == "alien3" 
+                || hit.collider.name == "alien4" || hit.collider.name == "alien5" || hit.collider.name == "alien6" || hit.collider.name == "alien7" 
+                || hit.collider.name == "alien8" || hit.collider.name == "alien9" || hit.collider.name == "alien10" || hit.collider.name == "alien11" || hit.collider.name == "alienboss" )
                 {
-                    Enemy enemy = hit.collider.GetComponent< Enemy >();
+                    Enemy alien = hit.collider.GetComponent< Enemy >();
  
-                    if ( enemy != null )
+                    if ( alien != null )
                     {
-                        enemy.TakeDamage(2);
+                        alien.TakeDamage(2);
                     }
  
                 }
+
+                
             }
         }
         
