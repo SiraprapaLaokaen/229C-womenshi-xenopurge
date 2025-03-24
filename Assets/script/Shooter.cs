@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shooter : MonoBehaviour
 {
     public Transform Bullet;
-    public GameObject vfxFirePoint , vfxHitpoint;
+    public GameObject vfxHitpoint;
 
 
     void Update()
@@ -25,7 +25,6 @@ public class Shooter : MonoBehaviour
 
             if ( Input.GetMouseButtonDown(0) )
             {
-                Instantiate( vfxFirePoint , Bullet.position , Quaternion.identity );
  
                 Instantiate( vfxHitpoint , hit.point , Quaternion.identity );
 
