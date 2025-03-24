@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro; // ใช้ TextMeshPro
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
-    private int currentHealth;
+    public int maxHealth = 100; 
+    private int currentHealth; 
 
-    public GameObject deathUI; // UI ข้อความ "ตายแล้ว"
-    public Button restartButton; // ปุ่ม Restart
+    public GameObject deathUI; 
+    public Button restartButton; 
+
+    public TextMeshProUGUI healthText; 
 
     void Start()
     {
@@ -18,12 +21,17 @@ public class PlayerHealth : MonoBehaviour
         deathUI.SetActive(false);
         restartButton.gameObject.SetActive(false);
 
-        restartButton.onClick.AddListener(RestartGame); // ตั้งให้ปุ่ม Restart ใช้งานได้
+        restartButton.onClick.AddListener(RestartGame); 
+
+        UpdateHealthUI(); 
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); 
+
+        UpdateHealthUI(); 
 
         if (currentHealth <= 0)
         {
@@ -41,7 +49,12 @@ public class PlayerHealth : MonoBehaviour
 
     void RestartGame()
     {
-        Time.timeScale = 1; // ทำให้เกมกลับมาปกติ
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // โหลดซีนใหม่
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void UpdateHealthUI()
+    {
+        healthText.text = "HP " + currentHealth + " / " + maxHealth;
     }
 }
