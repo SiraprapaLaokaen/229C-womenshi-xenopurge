@@ -19,16 +19,25 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        /*EnemyManager.instance.EnemyKilled(); // แจ้งให้ EnemyManager นับว่าศัตรูถูกฆ่า
-        Destroy(gameObject);*/
-
-        if (gameObject.name == "alienboss") // เช็คว่าศัตรูเป็น "alienboss"
+        if (gameObject.name == "alienboss")
         {
-            BossManager.instance.BossKilled(); // ส่งไปที่ BossManager
+            BossManager.instance.BossKilled();
+
+            WinManager winManager = FindObjectOfType<WinManager>();
+            if (winManager != null)
+            {
+                winManager.BossKilled();
+            }
         }
         else
         {
-            EnemyManager.instance.EnemyKilled(); // ส่งไปที่ EnemyManager
+            EnemyManager.instance.EnemyKilled();
+            
+            WinManager winManager = FindObjectOfType<WinManager>();
+            if (winManager != null)
+            {
+                winManager.EnemyKilled();
+            }
         }
 
         Destroy(gameObject);
