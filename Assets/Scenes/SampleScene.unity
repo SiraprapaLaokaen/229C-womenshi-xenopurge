@@ -290,7 +290,7 @@ Animation:
   m_GameObject: {fileID: 14049512}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -508,7 +508,7 @@ Animation:
   m_GameObject: {fileID: 29589042}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -888,7 +888,7 @@ Animation:
   m_GameObject: {fileID: 256045409}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -2986,7 +2986,7 @@ Animation:
   m_GameObject: {fileID: 862810140}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -4784,7 +4784,7 @@ Animation:
   m_GameObject: {fileID: 1343900922}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -4886,7 +4886,7 @@ Animation:
   m_GameObject: {fileID: 1453135486}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -5244,7 +5244,7 @@ Animation:
   m_GameObject: {fileID: 1522877656}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -6032,7 +6032,7 @@ Animation:
   m_GameObject: {fileID: 1710638124}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -6192,7 +6192,7 @@ Animation:
   m_GameObject: {fileID: 1735504960}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -6680,7 +6680,7 @@ Animation:
   m_GameObject: {fileID: 1795271964}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -6849,7 +6849,7 @@ Animation:
   m_GameObject: {fileID: 1815352927}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -7328,7 +7328,7 @@ Animation:
   m_GameObject: {fileID: 2001021969}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -7477,7 +7477,7 @@ Animation:
   m_GameObject: {fileID: 2067453133}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: -203655887218126122, guid: b9519542b0ab58e4eaa279459cd398ca, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
