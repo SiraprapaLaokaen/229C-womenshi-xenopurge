@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public GameObject bulletPrefab; // Prefab ของกระสุน
-    public Transform firePoint; // จุดยิงกระสุน
-    public float lightShootForce = 10f; // แรงยิงเบา (คลิกซ้าย)
-    public float heavyShootForce = 25f; // แรงยิงแรง (คลิกขวา)
+    public GameObject bulletPrefab; 
+    public Transform firePoint; 
+    public float lightShootForce = 10f; // ยิงเบา(คลิกซ้าย)
+    public float heavyShootForce = 25f; // ยิงแรง(คลิกขวา)
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) // คลิกซ้ายยิงเบา
+        if (Input.GetMouseButtonDown(0)) // คลิกซ้าย
         {
             Shoot(lightShootForce);
         }
-        else if (Input.GetMouseButtonDown(1)) // คลิกขวายิงแรง
+        else if (Input.GetMouseButtonDown(1)) // คลิกขวา
         {
             Shoot(heavyShootForce);
         }
@@ -28,9 +28,9 @@ public class Bullet : MonoBehaviour
 
         if (rb != null)
         {
-            rb.AddForce(firePoint.forward * force, ForceMode.Impulse); // ใช้ F = ma
+            rb.AddForce(firePoint.forward * force, ForceMode.Impulse); // F=ma
         }
 
-        Destroy(bullet, 1f); // ลบกระสุนหลัง 1 วินาที
+        Destroy(bullet, 1f); 
     }
 }

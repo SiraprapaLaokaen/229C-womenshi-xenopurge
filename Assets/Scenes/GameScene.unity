@@ -5706,7 +5706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 2124924993}
   player: {fileID: 2124924997}
-  speed: 4
+  speed: 5
   detectionRange: 22
 --- !u!111 &1343900927
 Animation:

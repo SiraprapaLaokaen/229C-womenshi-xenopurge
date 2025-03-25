@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using TMPro; // ใช้ TextMeshPro
+using TMPro; 
 
 public class PlayerHealth : MonoBehaviour
 {
