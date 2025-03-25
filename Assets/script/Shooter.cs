@@ -23,7 +23,7 @@ public class Shooter : MonoBehaviour
         {
             Debug.DrawRay( Bullet.position, transform.forward * 30, Color.red);
 
-            if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) // ตรวจจับคลิกซ้ายหรือขวา 
+            if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1)) 
             {
                 Instantiate(vfxHitpoint, hit.point, Quaternion.identity);
 
