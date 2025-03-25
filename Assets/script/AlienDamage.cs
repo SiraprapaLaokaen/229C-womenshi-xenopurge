@@ -5,30 +5,31 @@ using UnityEngine;
 public class AlienDamage : MonoBehaviour
 {
     public int damage = 10;
-    private bool canAttack = true; // ควบคุมการโจมตีซ้ำ
+    private bool hasAttacked = false; 
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (canAttack && other.gameObject.name == "soilder") // ตรวจสอบว่าชนกับ Soilder หรือไม่
+        if (collision.gameObject.name == "soilder" && !hasAttacked) 
         {
-            PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
 
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damage); // ลดเลือดของผู้เล่น
+                playerHealth.TakeDamage(damage); 
+                hasAttacked = true; 
                 Debug.Log("soilder โดนโจมตี! เลือดลด " + damage);
-                canAttack = false; // ล็อกไม่ให้โจมตีซ้ำ
             }
         }
     }
 
-    void OnTriggerExit(Collider other)
+    void OnCollisionExit(Collision collision)
     {
-        if (other.gameObject.name == "soilder")
+        if (collision.gameObject.name == "soilder")
         {
-            canAttack = true; // ปลดล็อกให้โจมตีได้ใหม่
+            hasAttacked = false; 
         }
     }
+
 
 }
 
